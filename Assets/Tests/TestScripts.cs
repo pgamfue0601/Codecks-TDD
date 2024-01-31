@@ -64,11 +64,11 @@ public class TestScripts
         Assert.AreEqual("<::Salud máxima::>", prueba);
     }
 
-    //public void test2()
-    //{
-    //    bool prueba = TestShoot(0);
-    //    Assert.AreEqual(true, prueba);
-    //}
+    public void test2()
+    {
+        bool prueba = TestShoot(0);
+        Assert.AreEqual(true, prueba);
+    }
 
 
     // A UnityTest behaves like a coroutine in Play Mode. In Edit Mode you can use
