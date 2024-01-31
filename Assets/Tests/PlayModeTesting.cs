@@ -7,6 +7,7 @@ using UnityEditor.SceneManagement;
 
 public class PlayModeTesting
 {
+    //PlayMode1
     private GameObject esfera;
     private GameObject cubo;
 
