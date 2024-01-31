@@ -62,6 +62,7 @@ public class TestScripts
         string prueba = TestHealthCheck(100);
         // Use the Assert class to test conditions
         Assert.AreEqual("<::Salud máxima::>", prueba);
+        //TestMode1
     }
 
     public void test2()
