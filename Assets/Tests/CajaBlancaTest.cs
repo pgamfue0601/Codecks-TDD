@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class CajaBlancaTest : MonoBehaviour
 {
+    private float vida = 100f;
+    private bool muerto = false;
+    private int dañoParry = 20;
+    private int dañoSpecial = 10;
+    private int dañoNormal = 8;
+    private bool isParrying;
+    private bool hasSpecialWeapon;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +22,16 @@ public class CajaBlancaTest : MonoBehaviour
     void Update()
     {
         
+    }
+
+    void AIFunctionality()
+    {
+        if (vida <= 0)
+        {
+            muerto = true;
+            return;
+        }
+
+
     }
 }
