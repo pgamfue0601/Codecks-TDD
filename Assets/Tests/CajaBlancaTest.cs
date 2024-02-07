@@ -6,32 +6,38 @@ public class CajaBlancaTest : MonoBehaviour
 {
     private float vida = 100f;
     private bool muerto = false;
-    private int dañoParry = 20;
-    private int dañoSpecial = 10;
-    private int dañoNormal = 8;
-    private bool isParrying;
+    private bool isParry;
     private bool hasSpecialWeapon;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (vida == 0)
+        {
+            this.muerto = true;
+        }
+        else
+        {
+            this.muerto = false;
+        }
+    }
+
+    public float Attack(bool isParry, bool hasSpecialWeapon)
+    {
+        if (isParry)
+        {
+            return 20f;
+        }
+        if (hasSpecialWeapon)
+        {
+            return 10f;
+        }
+        return 8f;
     }
 
     // Update is called once per frame
     void Update()
     {
         
-    }
-
-    void AIFunctionality()
-    {
-        if (vida <= 0)
-        {
-            muerto = true;
-            return;
-        }
-
-
     }
 }
